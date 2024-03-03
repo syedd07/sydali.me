@@ -216,12 +216,23 @@ const Project = props => {
     React.createElement("div", { className: "heading" }, /*#__PURE__*/
     React.createElement("h3", { className: "title" }, "My Works"), /*#__PURE__*/
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "I am still developing!  ", /*#__PURE__*/
-    )), /*#__PURE__*/
-/*Till no error*/
+    
+    ' ',
+    
+    React.createElement(Project, {
+      title: "Tic-Tac-Toe Game.",
+      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg',
+      tech: "js react css",
+      link: "https://game.sydali.me",
+      repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
+
+    React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
+    React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end projects on FreeCodeCamp.")), /*#__PURE__*/
 
 
-)));
+
+
+))));
 
 
 };
