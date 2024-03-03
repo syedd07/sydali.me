@@ -1,1 +1,1 @@
-# sydali.me
+This is my first portfolio website.
