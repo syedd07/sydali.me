@@ -1,4 +1,4 @@
-function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // Made by Yago Estévez (Twitter: @yagoestevez.com)
+function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} 
 
 
 /***********************
@@ -127,21 +127,21 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
-    React.createElement("p", null, "I mean as of now Nothing!"),
+    React.createElement("p", null, "I mean as now Nothing!"),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
     React.createElement("div", { className: "title" },
-    React.createElement("h3", null, "What he is doin now?")), /*#__PURE__*/
-    React.createElement("centred", { className: "separator" })),
-    
+                     
+    React.createElement("h3", null, "What he is doin   now?")),
+     React.createElement("p", { className: "separator" })),
+                        /*#__PURE__*/
     React.createElement("div", { className: "desc" },
     
-    React.createElement("p", { className: "subtitle" }, 
+ React.createElement("p", { className: "subtitle" }, 
     "I am pursuing my engineering from ",
     React.createElement("strong", null, "MVJ Collage of Engineering"),
     " located in Silicon city of India"
 ),
-    
-    
+
     React.createElement("div", { className: "desc" },
     
     React.createElement("div", { className: "title" },
@@ -245,11 +245,11 @@ const Contact = props => {
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
     React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
     '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "admin", /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "syedyusufali07", /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-at at" }), "sydali", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-at at" }), "gmail", /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-circle dot" }), "tech"), ":")), /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-circle dot" }), "com"), ":")), /*#__PURE__*/
 
 
 
@@ -297,13 +297,12 @@ const SocialLinks = props => {
   return /*#__PURE__*/(
     React.createElement("div", { className: "social" }, /*#__PURE__*/
     React.createElement("a", {
-      href: "https://twitter.com/syedd07",
+      href: "https://www.linkedin.com/in/syedd07/",
       target: "_blank",
       rel: "noopener noreferrer",
-      title: "Link to author's Twitter profile" },
-
-    ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-twitter" })), /*#__PURE__*/
+      title: "Link to author's LinkedIn Profile" },
+      ' ', /*#__PURE__*/
+    React.createElement("i", { className: "fab fa-linkedin" })), /*#__PURE__*/
 
     React.createElement("a", {
       id: "profile-link",
@@ -314,9 +313,41 @@ const SocialLinks = props => {
 
     ' ', /*#__PURE__*/
     React.createElement("i", { className: "fab fa-github" })), /*#__PURE__*/
+  
+    React.createElement("a", {
+      href: "https://www.facebook.com/syedd07/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: "Link to author's Facebook Profile" },
+      ' ', /*#__PURE__*/
+    
+      React.createElement("i", { className: "fab fa-facebook" })),
+    React.createElement("a", {
+      href: "https://www.instagram.com/syedd07/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: "Link to author's Instagram Profile" },
+      ' ', /*#__PURE__*/
+    React.createElement("i", { className: "fab fa-instagram" })), /*#__PURE__*/
+     
+    React.createElement("a", {
+      href: "https://wa.me/+918152987692/",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: "Link to author's Instagram Profile" },
+      ' ', /*#__PURE__*/
+    React.createElement("i", { className: "fab fa-whatsapp" })),
 
-    ));
-
+    React.createElement("a", {
+      href: "https://twitter.com/syedd07",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      title: "Link to author's Twitter profile" },
+      ' ', /*#__PURE__*/
+    React.createElement("i", { className: "fab fa-twitter" }))
+    
+    ))
+    
 };
 
 
