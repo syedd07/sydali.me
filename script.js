@@ -144,7 +144,7 @@ const About = props => {
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic" } }, "My Resume")
 
      
-    )))))
+    ))))))
     
   };
 
