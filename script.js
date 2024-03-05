@@ -141,7 +141,8 @@ const About = props => {
     React.createElement("div", { className: "desc full" },
     React.createElement("div", { className: "resume-link", style: { textAlign: "center" } },
     
-    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "My Resume"))
+    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic" } }, "My Resume")
+
      
     )))))
     
