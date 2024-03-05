@@ -24,6 +24,8 @@ const Menu = props => {
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#projects", onClick: props.toggleMenu }, "PORTFOLIO")), /*#__PURE__*/
 
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "RESUME")),
 
 
     React.createElement("li", null, /*#__PURE__*/
@@ -127,34 +129,24 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
-    React.createElement("p", null, "I mean as now Nothing!"),
+    React.createElement("p", null, "I mean as of now Nothing!"),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
-    React.createElement("div", { className: "title" },
-                     
-    React.createElement("h3", null, "What he is doin   now?")),
-     React.createElement("p", { className: "separator" })),
-                        /*#__PURE__*/
-    React.createElement("div", { className: "desc" },
     
- React.createElement("p", { className: "subtitle" }, 
-    "I am pursuing my engineering from ",
-    React.createElement("strong", null, "MVJ Collage of Engineering"),
-    " located in Silicon city of India"
-),
+  
 
-    React.createElement("div", { className: "desc" },
-    
+
     React.createElement("div", { className: "title" },
-    React.createElement("h4", null, "For the back-end")), /*#__PURE__*/
+    React.createElement("strong", null, "Download My Resume"), /*#__PURE__*/
     React.createElement("p", { className: "separator" })),
+    React.createElement("div", { className: "desc full" },
+    React.createElement("div", { className: "resume-link", style: { textAlign: "center" } },
     
-    React.createElement("h4", { className: "subtitle" }, "Still Learning:)"),
-    )
-    ))
-    )
-    
+    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "My Resume"))
+     
+    )))))
     
   };
+
 
 
 /***********************
@@ -233,17 +225,13 @@ const Project = props => {
 
 
 ))));
-
-
 };
 
+  /***********************
+     Contact Component
+  ***********************/
 
-
-/***********************
-  Contact Component
- ***********************/
-
-const Contact = props => {
+  const Contact = props => {
   return /*#__PURE__*/(
     React.createElement("section", { id: "contact" }, /*#__PURE__*/
     React.createElement("div", { className: "container" }, /*#__PURE__*/
@@ -285,7 +273,7 @@ const Contact = props => {
   Footer Component
  ***********************/
 
-const Footer = props => {
+  const Footer = props => {
   return /*#__PURE__*/(
     React.createElement("footer", null, /*#__PURE__*/
     React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
@@ -300,11 +288,11 @@ const Footer = props => {
 
 
 
-/***********************
+  /***********************
   Social Links Component
  ***********************/
 
-const SocialLinks = props => {
+  const SocialLinks = props => {
   return /*#__PURE__*/(
     React.createElement("div", { className: "social" }, /*#__PURE__*/
     React.createElement("a", {
@@ -367,7 +355,7 @@ const SocialLinks = props => {
   Main Component
  ***********************/
 
-class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "state",
+  class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "state",
     {
       menuState: false });_defineProperty(this, "toggleMenu",
 
@@ -392,6 +380,7 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
       React.createElement(Projects, null), /*#__PURE__*/
       React.createElement(Contact, null), /*#__PURE__*/
       React.createElement(Footer, null)));
+      
 
 
   }
