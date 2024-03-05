@@ -144,7 +144,7 @@ const About = props => {
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic" } }, "My Resume")
 
      
-    )))))
+    ))))))
     
   };
 
@@ -220,7 +220,7 @@ const Project = props => {
       repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
 
     React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
-    React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end projects on FreeCodeCamp.")), /*#__PURE__*/
+    React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end project.")), /*#__PURE__*/
 
 
 
