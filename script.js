@@ -214,7 +214,7 @@ const Project = props => {
     
     React.createElement(Project, {
       title: "Tic-Tac-Toe Game.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg',
+      img: 'https://github.com/syedd07/game/blob/main/tic-tac-toe.jpg?raw=true',
       tech: "js react css",
       link: "https://game.sydali.me",
       repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
