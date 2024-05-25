@@ -331,7 +331,7 @@ const Project = props => {
     React.createElement("i", { className: "fab fa-instagram" })), /*#__PURE__*/
      
     React.createElement("a", {
-      href: "https://wa.me/+918152987692/",
+      href: "https://wa.me/+918722264292/",
       target: "_blank",
       rel: "noopener noreferrer",
       title: "Link to author's Instagram Profile" },
