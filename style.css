@@ -1,3 +1,5 @@
+
+
 *,
 *::before,
 *::after,
@@ -133,11 +135,11 @@ a:active {
 }
 
 .menu-container::before {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Stars.svg?sanitize=true);
 }
 
 .menu-container::after {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Trees.svg?sanitize=true) bottom repeat-x;
 }
 
 .menu-container.deactive {
@@ -504,7 +506,7 @@ a:active {
 #welcome-section::before {
   content: '';
   position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Stars.svg?sanitize=true);
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
@@ -538,7 +540,7 @@ a:active {
   position: absolute;
   bottom: -300px;
   left: 0;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom left repeat-x;
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Trees.svg?sanitize=true) bottom left repeat-x;
   background-size: cover;
   width: 100%;
   height: 80%;
@@ -572,7 +574,7 @@ a:active {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Silhouette.svg?sanitize=true) bottom left no-repeat;
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Silhouette.svg?sanitize=true) bottom left no-repeat;
   width: 50%;
   height: 50%;
   opacity: 0;
@@ -605,7 +607,7 @@ a:active {
   top: 0;
   right: 0;
   position: fixed;
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Moon.svg?sanitize=true) right 150% no-repeat;
+  background: url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Moon.svg?sanitize=true) right 150% no-repeat;
   background-size: 40% 40%;
   background-attachment: fixed;
   width: 100%;
@@ -798,8 +800,7 @@ a:active {
   -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
           clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
-  background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
-  background-attachment: fixed;
+
 }
 
 #about .wrapper {
@@ -1094,7 +1095,7 @@ a:active {
  *****************/
 
 #contact {
-  background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  background: #181d23 url(https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/envelope.svg?sanitize=true) no-repeat right;
   -webkit-clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
   color: #fafafa;
