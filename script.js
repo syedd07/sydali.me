@@ -26,9 +26,7 @@ const Menu = props => {
 
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "RESUME")),
-
-
-    React.createElement("li", null, /*#__PURE__*/
+        React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTACT"))), /*#__PURE__*/
 
 
@@ -132,7 +130,7 @@ const About = props => {
     React.createElement("p", null, "I mean as of now Nothing!"),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
     
-  
+
 
 
     React.createElement("div", { className: "title" },
@@ -140,16 +138,24 @@ const About = props => {
     React.createElement("p", { className: "separator" })),
     React.createElement("div", { className: "desc full" },
     React.createElement("div", { className: "resume-link", style: { textAlign: "center" } },
+    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "My Resume"),
+    React.createElement("p",{ClassName: "separator"}),
+    React.createElement("p", null, "You can download my resume by clicking on the link above.")))), /*#__PURE__*/
     
-    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic" } }, "My Resume")
-
-     
-    ))))))
     
-  };
+    React.createElement("div", { className: "title" }, /*#__PURE__*/
+    React.createElement("h3", null, "Internships"), /*#__PURE__*/ 
+    React.createElement("p", { className: "separator" })), /*#__PURE__*/
+    React.createElement("div", { className: "desc full" }, /*#__PURE__*/
+    React.createElement("div", { className: "resume-link", style: { textAlign: "center" } },
+    React.createElement("a", { href: "https://internship.sydali.me//", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "Internship Certificate"),
+    React.createElement("p",{ClassName: "separator"}),
+    React.createElement("p", null, "You can verify my certificates by clicking on the link above.")
+  )
 
-
-
+   
+  ))))
+};
 /***********************
   Project Component
  ***********************/
