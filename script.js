@@ -247,11 +247,9 @@ const Contact = (props) => {
     React.createElement("p", { className: "title" }, "Want to ", /*#__PURE__*/
     React.createElement("br", null), "contact me?"), /*#__PURE__*/
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
-    '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "syedyusufali6626", /*#__PURE__*/
-    React.createElement("i", { className: "fas fa-at at" }), "gmail", /*#__PURE__*/
-    React.createElement("i", { className: "fas fa-circle dot" }), "com"), ":")), /*#__PURE__*/
+    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",'', /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "admin", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-at at" }),"sydali.me", ))),
     React.createElement(SocialLinks, null)), /*#__PURE__*/
     React.createElement("form", { id: "contact-form", method: "POST", action: "https://api.web3forms.com/submit" }, /*#__PURE__*/
     React.createElement("input", { type: "hidden", name: "access_key", value: "83216218-34fe-40ee-b793-d0089a139cdd" }), /*Use your API key*/
