@@ -267,6 +267,10 @@ const Project = props => {
 
     ))), /*#__PURE__*/
 
+
+
+
+
     React.createElement(SocialLinks, null)), /*#__PURE__*/
 
     React.createElement("form", {
@@ -303,24 +307,12 @@ const Project = props => {
           type: "submit"
       })
   ))));
-};
-
-/***********************
-  Footer Component
- ***********************/
-
-  const Footer = props => {
-  return /*#__PURE__*/(
-    React.createElement("footer", null, /*#__PURE__*/
-    React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
-    React.createElement("h3", null, "THANKS FOR VISITING"), /*#__PURE__*/
-    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), " Syed Ali."), /*#__PURE__*/
-    React.createElement(SocialLinks, null))));
+  
+    
 
 
 
 };
-
 
 
 
