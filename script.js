@@ -250,91 +250,85 @@ const Project = props => {
      Contact Component
   ***********************/
 
-  const Contact = props => {
-  return /*#__PURE__*/(
-    React.createElement("section", { id: "contact" }, /*#__PURE__*/
-    React.createElement("div", { className: "container" }, /*#__PURE__*/
-    React.createElement("div", { className: "heading-wrapper" }, /*#__PURE__*/
-    React.createElement("div", { className: "heading" }, /*#__PURE__*/
-    React.createElement("p", { className: "title" }, "Want to ", /*#__PURE__*/
-    React.createElement("br", null), "contact me?"), /*#__PURE__*/
+      const Contact = props => {
 
-
-    React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
-    '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "admin@sydali.me", /*#__PURE__*/
-
-    ))), /*#__PURE__*/
-
-
-
-
-
-    React.createElement(SocialLinks, null)), /*#__PURE__*/
-
-    React.createElement("form", {
-      id: "contact-form",
-      method: "POST",
-      action: "https://sydali.me/thanks.html" 
-  },
-      React.createElement("input", {
-          type: "hidden",
-          name: "access_key",
-          value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
-      }),
-      React.createElement("input", {
-          placeholder: "Name",
-          name: "name",
-          type: "text",
-          required: true
-      }),
-      React.createElement("input", {
-          placeholder: "Email",
-          name: "email",
-          type: "email",
-          required: true
-      }),
-      React.createElement("textarea", {
-          placeholder: "Message",
-          type: "text",
-          name: "message"
-      }),
-      React.createElement("input", {
-          className: "button",
-          id: "submit",
-          value: "Submit",
-          type: "submit"
-      })
-  ))));
-  
+      const handleSubmit = (e) => {
+        e.preventDefault(); // Prevent the default form submission
     
-
-
-
-};
-
-
-
-/***********************
-  Footer Component
- ***********************/
-
-  const Footer = props => {
-  return /*#__PURE__*/(
-    React.createElement("footer", null, /*#__PURE__*/
-    React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
-    React.createElement("h3", null, "THANKS FOR VISITING"), /*#__PURE__*/
-    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), " Syed Ali."), /*#__PURE__*/
-    React.createElement(SocialLinks, null))));
-
-
-
-};
-
-
-
-
+        const form = e.target;
+        const formData = new FormData(form);
+    
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = 'https://sydali.me/thanks.html'; // Redirect to the thank you page
+            } else {
+                alert('There was an issue with your submission, please try again.');
+            }
+        }).catch(error => {
+            console.error('Form submission error:', error);
+        });
+      };
+    
+      return (
+        React.createElement("section", { id: "contact" }, 
+          React.createElement("div", { className: "container" }, 
+            React.createElement("div", { className: "heading-wrapper" }, 
+              React.createElement("div", { className: "heading" }, 
+                React.createElement("p", { className: "title" }, "Want to ", 
+                  React.createElement("br", null), "contact me?"),
+                React.createElement("p", { className: "separator" }), 
+                React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ", '', 
+                  React.createElement("span", { className: "mail" }, "admin@sydali.me")
+                )
+              ), 
+              React.createElement(SocialLinks, null)
+            ), 
+            React.createElement("form", {
+                id: "contact-form",
+                method: "POST",
+                action: "https://api.web3forms.com/summit", // The API endpoint for form submission
+                onSubmit: handleSubmit
+              },
+              React.createElement("input", {
+                  type: "hidden",
+                  name: "access_key",
+                  value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
+              }),
+              React.createElement("input", {
+                  placeholder: "Name",
+                  name: "name",
+                  type: "text",
+                  required: true
+              }),
+              React.createElement("input", {
+                  placeholder: "Email",
+                  name: "email",
+                  type: "email",
+                  required: true
+              }),
+              React.createElement("textarea", {
+                  placeholder: "Message",
+                  type: "text",
+                  name: "message"
+              }),
+              React.createElement("input", {
+                  className: "button",
+                  id: "submit",
+                  value: "Submit",
+                  type: "submit"
+              })
+            )
+          )
+        )
+      );
+    };
+    
   /***********************
   Social Links Component
  ***********************/
