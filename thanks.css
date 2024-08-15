@@ -1,0 +1,136 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #242828, #242828);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+    animation: backgroundShift 10s infinite alternate;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 20px;
+}
+
+.loader-container p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.thank-you-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.thank-you-content .icon {
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: bounceIn 1.2s ease-in-out;
+}
+
+.thank-you-content h1,
+.thank-you-content p {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+}
+
+.thank-you-content p {
+    animation-delay: 0.3s;
+}
+
+.thank-you-content p:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.thank-you-content .buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.thank-you-content .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.thank-you-content .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.thank-you-content .home-btn {
+    background-color: #28a745;
+}
+
+.thank-you-content .home-btn:hover {
+    background-color: #218838;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    60% { opacity: 1; transform: scale(1.1); }
+    80% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
