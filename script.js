@@ -267,61 +267,43 @@ const Project = props => {
 
     ))), /*#__PURE__*/
 
-
-
-
-
     React.createElement(SocialLinks, null)), /*#__PURE__*/
 
     React.createElement("form", {
       id: "contact-form",
       method: "POST",
-      action: "https://sydali.me/thanks.html"
+      action: "https://sydali.me/thanks.html" 
   },
       React.createElement("input", {
           type: "hidden",
           name: "access_key",
-          value: "83216218-34fe-40ee-b793-d0089a139cdd"
+          value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
       }),
       React.createElement("input", {
           placeholder: "Name",
           name: "name",
           type: "text",
-          required: true,
-          style: { width: '100%', padding: '10px', margin: '10px 0' }
+          required: true
       }),
       React.createElement("input", {
           placeholder: "Email",
           name: "email",
           type: "email",
-          required: true,
-          style: { width: '100%', padding: '10px', margin: '10px 0' }
+          required: true
       }),
       React.createElement("textarea", {
           placeholder: "Message",
           type: "text",
-          name: "message",
-          style: { width: '100%', padding: '10px', margin: '10px 0' }
+          name: "message"
       }),
       React.createElement("input", {
           className: "button",
           id: "submit",
           value: "Submit",
-          type: "submit",
-          style: { width: '100%', padding: '10px', margin: '10px 0', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px' }
+          type: "submit"
       })
-  )
-  
-    
-  )));
-  
-    
-
-
-
+  ))));
 };
-
-
 
 /***********************
   Footer Component
