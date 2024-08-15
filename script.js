@@ -250,7 +250,7 @@ const Project = props => {
      Contact Component
   ***********************/
 
-      const Contact = props => {
+     const Contact = props => {
 
       const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the default form submission
@@ -329,6 +329,28 @@ const Project = props => {
       );
     };
     
+
+
+
+/***********************
+  Footer Component
+ ***********************/
+
+  const Footer = props => {
+  return /*#__PURE__*/(
+    React.createElement("footer", null, /*#__PURE__*/
+    React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
+    React.createElement("h3", null, "THANKS FOR VISITING"), /*#__PURE__*/
+    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), " Syed Ali."), /*#__PURE__*/
+    React.createElement(SocialLinks, null))));
+
+
+
+};
+
+
+
+
   /***********************
   Social Links Component
  ***********************/
