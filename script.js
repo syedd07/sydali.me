@@ -276,39 +276,64 @@ const Project = props => {
     React.createElement("form", {
       id: "contact-form",
       method: "POST",
-      action: "thanks.html" 
+      action: "https://sydali.me/thanks.html"
   },
       React.createElement("input", {
           type: "hidden",
           name: "access_key",
-          value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
+          value: "83216218-34fe-40ee-b793-d0089a139cdd"
       }),
       React.createElement("input", {
           placeholder: "Name",
           name: "name",
           type: "text",
-          required: true
+          required: true,
+          style: { width: '100%', padding: '10px', margin: '10px 0' }
       }),
       React.createElement("input", {
           placeholder: "Email",
           name: "email",
           type: "email",
-          required: true
+          required: true,
+          style: { width: '100%', padding: '10px', margin: '10px 0' }
       }),
       React.createElement("textarea", {
           placeholder: "Message",
           type: "text",
-          name: "message"
+          name: "message",
+          style: { width: '100%', padding: '10px', margin: '10px 0' }
       }),
       React.createElement("input", {
           className: "button",
           id: "submit",
           value: "Submit",
-          type: "submit"
+          type: "submit",
+          style: { width: '100%', padding: '10px', margin: '10px 0', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px' }
       })
-  ))));
+  )
   
     
+  )));
+  
+    
+
+
+
+};
+
+
+
+/***********************
+  Footer Component
+ ***********************/
+
+  const Footer = props => {
+  return /*#__PURE__*/(
+    React.createElement("footer", null, /*#__PURE__*/
+    React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
+    React.createElement("h3", null, "THANKS FOR VISITING"), /*#__PURE__*/
+    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), " Syed Ali."), /*#__PURE__*/
+    React.createElement(SocialLinks, null))));
 
 
 
