@@ -26,7 +26,9 @@ const Menu = props => {
 
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "RESUME")),
-        React.createElement("li", null, /*#__PURE__*/
+
+
+    React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTACT"))), /*#__PURE__*/
 
 
@@ -127,9 +129,15 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
-    React.createElement("p", null, "I mean as of now Nothing!"),
+    React.createElement("p", null, "I mean as of now!"),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
     
+
+    React.createElement("div", { className: "title" }, /*#__PURE__*/
+      React.createElement("h3", { className: "subtitle" }, "What else?"), /*#__PURE__*/
+      React.createElement("p", { className: "separator" }), /*#__PURE__*/
+      React.createElement("div", { className: "desc full" }, /*#__PURE__*/
+      React.createElement("p", null, "I am currently pursuing my engineering from MVJ Collage of Engineering loacated in the Silicon Valley of India!")), /*#__PURE__*/
 
 
 
@@ -140,7 +148,7 @@ const About = props => {
     React.createElement("div", { className: "resume-link", style: { textAlign: "center" } },
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "My Resume"),
     React.createElement("p",{ClassName: "separator"}),
-    React.createElement("p", null, "You can download my resume by clicking on the link above.")))), /*#__PURE__*/
+    React.createElement("p", null, "You can View my resume by clicking on the link above.")))), /*#__PURE__*/
     
     
     React.createElement("div", { className: "title" }, /*#__PURE__*/
@@ -154,8 +162,12 @@ const About = props => {
   )
 
    
-  ))))
+  )))))
 };
+  
+
+
+
 /***********************
   Project Component
  ***********************/
@@ -220,13 +232,13 @@ const Project = props => {
     
     React.createElement(Project, {
       title: "Tic-Tac-Toe Game.",
-      img: 'https://github.com/syedd07/game/blob/main/tic-tac-toe.jpg?raw=true',
+      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg',
       tech: "js react css",
       link: "https://game.sydali.me",
       repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
 
     React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
-    React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end project.")), /*#__PURE__*/
+    React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end projects.")), /*#__PURE__*/
 
 
 
@@ -238,25 +250,38 @@ const Project = props => {
      Contact Component
   ***********************/
 
-const Contact = (props) => {
-  return /*#__PURE__*/ (
+  const Contact = props => {
+  return /*#__PURE__*/(
     React.createElement("section", { id: "contact" }, /*#__PURE__*/
     React.createElement("div", { className: "container" }, /*#__PURE__*/
     React.createElement("div", { className: "heading-wrapper" }, /*#__PURE__*/
     React.createElement("div", { className: "heading" }, /*#__PURE__*/
     React.createElement("p", { className: "title" }, "Want to ", /*#__PURE__*/
     React.createElement("br", null), "contact me?"), /*#__PURE__*/
+
+
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",'', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "admin", /*#__PURE__*/
-    React.createElement("i", { className: "fas fa-at at" }),"sydali.me", ))),
+    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
+    '', /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "admin@sydali.me", /*#__PURE__*/
+
+    ))), /*#__PURE__*/
+
+
+
+
+
     React.createElement(SocialLinks, null)), /*#__PURE__*/
+
     React.createElement("form", { id: "contact-form", method: "POST", action: "https://api.web3forms.com/submit" }, /*#__PURE__*/
-    React.createElement("input", { type: "hidden", name: "access_key", value: "83216218-34fe-40ee-b793-d0089a139cdd" }), /*Use your API key*/
-    React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
-    React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
-    React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
-    React.createElement("input", { className: "button", id: "submit", value: "Submit", type: "submit" })))));
+      React.createElement("input", { type: "hidden", name: "access_key", value: "83216218-34fe-40ee-b793-d0089a139cdd" }), /*Use your API key*/
+      React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
+      React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
+      React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
+      React.createElement("input", { className: "button", id: "submit", value: "Submit", type: "submit" })))));
+
+
+
 };
 
 
@@ -322,7 +347,7 @@ const Contact = (props) => {
     React.createElement("i", { className: "fab fa-instagram" })), /*#__PURE__*/
      
     React.createElement("a", {
-      href: "https://wa.me/+918722264292/",
+      href: "https://wa.me/+918152987692/",
       target: "_blank",
       rel: "noopener noreferrer",
       title: "Link to author's Instagram Profile" },
