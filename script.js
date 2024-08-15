@@ -273,16 +273,47 @@ const Project = props => {
 
     React.createElement(SocialLinks, null)), /*#__PURE__*/
 
-    React.createElement("form", { id: "contact-form", method: "POST", action: "https://api.web3forms.com/submit" }, /*#__PURE__*/
-      React.createElement("input", { type: "hidden", name: "access_key", value: "83216218-34fe-40ee-b793-d0089a139cdd" }), /*Use your API key*/
-      React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
-      React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
-      React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
-      React.createElement("input", { className: "button", id: "submit", value: "Submit", type: "submit" })))));
+    React.createElement("form", {
+      id: "contact-form",
+      method: "POST",
+      action: "thanks.html" 
+  },
+      React.createElement("input", {
+          type: "hidden",
+          name: "access_key",
+          value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
+      }),
+      React.createElement("input", {
+          placeholder: "Name",
+          name: "name",
+          type: "text",
+          required: true
+      }),
+      React.createElement("input", {
+          placeholder: "Email",
+          name: "email",
+          type: "email",
+          required: true
+      }),
+      React.createElement("textarea", {
+          placeholder: "Message",
+          type: "text",
+          name: "message"
+      }),
+      React.createElement("input", {
+          className: "button",
+          id: "submit",
+          value: "Submit",
+          type: "submit"
+      })
+  ))));
+  
+    
 
 
 
 };
+
 
 
 
