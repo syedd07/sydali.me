@@ -252,27 +252,33 @@ const Project = props => {
 
      const Contact = props => {
 
-      const handleSubmit = (e) => {
+      const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent the default form submission
     
         const form = e.target;
         const formData = new FormData(form);
     
-        fetch(form.action, {
+        try {
+          const response = await fetch(form.action, {
             method: form.method,
             body: formData,
             headers: {
-                'Accept': 'application/json'
+              'Accept': 'application/json'
             }
-        }).then(response => {
-            if (response.ok) {
-                window.location.href = 'https://sydali.me/thanks.html'; // Redirect to the thank you page
-            } else {
-                alert('There was an issue with your submission, please try again.');
-            }
-        }).catch(error => {
-            console.error('Form submission error:', error);
-        });
+          });
+    
+          const responseData = await response.json();
+          console.log('Response:', responseData);
+    
+          if (response.ok) {
+            window.location.href = 'https://sydali.me/thanks.html'; // Redirect to the thank you page
+          } else {
+            alert('There was an issue with your submission, please try again.');
+          }
+        } catch (error) {
+          console.error('Form submission error:', error);
+          alert('There was an issue with your submission, please try again.');
+        }
       };
     
       return (
@@ -292,13 +298,13 @@ const Project = props => {
             React.createElement("form", {
                 id: "contact-form",
                 method: "POST",
-                action: "https://api.web3forms.com/summit", // The API endpoint for form submission
+                action: "https://api.web3forms.com/submit", // Correct API endpoint for Web3Forms
                 onSubmit: handleSubmit
               },
               React.createElement("input", {
                   type: "hidden",
                   name: "access_key",
-                  value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your API key here
+                  value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your Web3Forms API key
               }),
               React.createElement("input", {
                   placeholder: "Name",
@@ -328,6 +334,7 @@ const Project = props => {
         )
       );
     };
+    
     
 
 
