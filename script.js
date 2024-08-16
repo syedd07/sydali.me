@@ -250,92 +250,39 @@ const Project = props => {
      Contact Component
   ***********************/
 
-     const Contact = props => {
+  const Contact = props => {
+  return /*#__PURE__*/(
+    React.createElement("section", { id: "contact" }, /*#__PURE__*/
+    React.createElement("div", { className: "container" }, /*#__PURE__*/
+    React.createElement("div", { className: "heading-wrapper" }, /*#__PURE__*/
+    React.createElement("div", { className: "heading" }, /*#__PURE__*/
+    React.createElement("p", { className: "title" }, "Want to ", /*#__PURE__*/
+    React.createElement("br", null), "contact me?"), /*#__PURE__*/
 
-      const handleSubmit = async (e) => {
-        e.preventDefault(); // Prevent the default form submission
-    
-        const form = e.target;
-        const formData = new FormData(form);
-    
-        try {
-          const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-    
-          const responseData = await response.json();
-          console.log('Response:', responseData);
-    
-          if (response.ok) {
-            window.location.href = 'https://sydali.me/thanks.html'; // Redirect to the thank you page
-          } else {
-            alert('There was an issue with your submission, please try again.');
-          }
-        } catch (error) {
-          console.error('Form submission error:', error);
-          alert('There was an issue with your submission, please try again.');
-        }
-      };
-    
-      return (
-        React.createElement("section", { id: "contact" }, 
-          React.createElement("div", { className: "container" }, 
-            React.createElement("div", { className: "heading-wrapper" }, 
-              React.createElement("div", { className: "heading" }, 
-                React.createElement("p", { className: "title" }, "Want to ", 
-                  React.createElement("br", null), "contact me?"),
-                React.createElement("p", { className: "separator" }), 
-                React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ", '', 
-                  React.createElement("span", { className: "mail" }, "admin@sydali.me")
-                )
-              ), 
-              React.createElement(SocialLinks, null)
-            ), 
-            React.createElement("form", {
-                id: "contact-form",
-                method: "POST",
-                action: "https://api.web3forms.com/submit", // Correct API endpoint for Web3Forms
-                onSubmit: handleSubmit
-              },
-              React.createElement("input", {
-                  type: "hidden",
-                  name: "access_key",
-                  value: "83216218-34fe-40ee-b793-d0089a139cdd" // Use your Web3Forms API key
-              }),
-              React.createElement("input", {
-                  placeholder: "Name",
-                  name: "name",
-                  type: "text",
-                  required: true
-              }),
-              React.createElement("input", {
-                  placeholder: "Email",
-                  name: "email",
-                  type: "email",
-                  required: true
-              }),
-              React.createElement("textarea", {
-                  placeholder: "Message",
-                  type: "text",
-                  name: "message"
-              }),
-              React.createElement("input", {
-                  className: "button",
-                  id: "submit",
-                  value: "Submit",
-                  type: "submit"
-              })
-            )
-          )
-        )
-      );
-    };
-    
-    
+
+    React.createElement("p", { className: "separator" }), /*#__PURE__*/
+    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
+    '', /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "admin@sydali.me", /*#__PURE__*/
+
+    ))), /*#__PURE__*/
+
+
+
+
+
+    React.createElement(SocialLinks, null)), /*#__PURE__*/
+
+    React.createElement("form", { id: "contact-form", method: "POST", action: "https://api.web3forms.com/submit" }, /*#__PURE__*/
+      React.createElement("input", { type: "hidden", name: "access_key", value: "0d1ffa74-f0e3-462f-90aa-b4e9716534dd" }), /*Use your API key*/
+      React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
+      React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
+      React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
+      React.createElement("input", { className: "button", id: "submit", value: "Submit", type: "submit" })))));
+
+
+
+};
 
 
 
