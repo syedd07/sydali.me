@@ -228,11 +228,10 @@ const Project = props => {
     React.createElement("h3", { className: "title" }, "My Works"), /*#__PURE__*/
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
     
-    ' ',
     
     React.createElement(Project, {
       title: "Tic-Tac-Toe Game.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg',
+      img: 'https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/tic-tac-toe.svg',
       tech: "js react css",
       link: "https://game.sydali.me",
       repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
@@ -240,6 +239,18 @@ const Project = props => {
     React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
     React.createElement("p", null, "A Tic-Tac-Toe game with a basic AI algorithm made for the legacy front-end projects.")), /*#__PURE__*/
 
+ /**************
+  Project 2
+  *************/
+    React.createElement(Project, {
+      title: "Rubik's Cube",
+      img: "https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Rubik's_cube.svg",
+      tech: "js ThreeJS  css",
+      link: "https://sydali.me/Rubik's%20Cube/dist/index.html",
+      repo: "https://github.com/syedd07/sydali.me/tree/gh-pages/Rubik's%20Cube" }, /*#__PURE__*/
+
+    React.createElement("small", null, "Built using ThreeJS, CSS."), /*#__PURE__*/
+    React.createElement("p", null, "A Rubic Cube made using ThreeJS and CSS.")), /*#__PURE__*/
 
 
 
