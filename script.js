@@ -44,7 +44,13 @@ const Nav = props => {
 
     React.createElement("span", null))))));
 
+
+
+
+
 };
+
+
 
 /***********************
   Header Component
@@ -115,6 +121,7 @@ const About = props => {
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("div", { className: "course-link", style: { textAlign: "center" } },
     React.createElement("a", { href: "/certificates/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
     React.createElement("p", null, "I have completed my different courses from online education perovider like coursera and scrima.. etc; you can see my certificates by clicking on the link below.")))), /*#__PURE__*/
     
