@@ -103,6 +103,7 @@ const About = props => {
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
     React.createElement("p", null, "I mean as of now!"),
+    React.createElement("p", null, "However"),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
     
     /*# What else? */
@@ -123,7 +124,7 @@ const About = props => {
     React.createElement("a", { href: "/certificates/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
-    React.createElement("p", null, "I have completed my different courses from online education perovider like coursera and scrima.. etc; you can see my certificates by clicking on the link below.")))), /*#__PURE__*/
+    React.createElement("p", null, "I have completed my different courses from online education provider like coursera and scrimba.. etc; you can see all my certificates by clicking on the link.")))), /*#__PURE__*/
     
     
 
