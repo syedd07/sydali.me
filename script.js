@@ -103,7 +103,7 @@ const About = props => {
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
     React.createElement("p", null, "I mean as of now!"),
-    React.createElement("p", null, "However"),
+     React.createElement("p", null, "However.., "),
     React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS. I also make the web pretty by using CSS and, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
     
     /*# What else? */
