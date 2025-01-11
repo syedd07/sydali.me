@@ -1,106 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Certificates</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-  <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="/icon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-  <link rel="manifest" href="/icon/site.webmanifest">
+  <meta charset="UTF-8">
+  <title>Course Certificates</title>
+  <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <div class="slider-container">
-        <div class="courses-container">
-            <div class="course-wrapper">
-                <div id="course1" class="course">
-                    <div class="course-preview">
-                        <h6>Course name</h6>
-                        <h2>JavaScript Fundamentals</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/HJVJCRS52TCK" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="course-info">
-                        <h6>Apr 28, 2023</h6>
-                        <h2 style="font-family: 'Times New Roman', Times, serif;">Syed Yousuf Ali</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/HJVJCRS52TCK" class="btn" target="_blank">Verify Certificate</a>
-                    </div>
-                </div>
-                <div id="course2" class="course">
-                    <div class="course-preview">
-                        <h6>Course name</h6>
-                        <h2>Front-End Development</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/M9LGBR95MNYU" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="course-info">
-                        <h6>Jun 20, 2023</h6>
-                        <h2 style="font-family: 'Times New Roman', Times, serif;">Syed Yousuf Ali</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/M9LGBR95MNYU" class="btn" target="_blank">Verify Certificate</a>
-                    </div>
-                </div>
-                <div id="course3" class="course">
-                    <div class="course-preview">
-                        <h6>Course name</h6>
-                        <h2>Advanced JavaScript</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/XXXXX" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="course-info">
-                        <h6>Jul 15, 2023</h6>
-                        <h2 style="font-family: 'Times New Roman', Times, serif;">Syed Yousuf Ali</h2>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/XXXXX" class="btn" target="_blank">Verify Certificate</a>
-                    </div>
-                </div>
-            </div>
+  
+<!-- partial:index.partial.html -->
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        
+        <img src="/dist/img/front-end.jpeg" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">10 Jan 2023</span>
+        <div class="blog-slider__title">Introduction to Front-End Development
+          <p style="text-align: center; font-size: small; margin-top: 4px; font-style: oblique;">
+            by Meta
+          </p>
         </div>
-        <div class="nav-buttons">
-            <button class="nav-button prev-btn">&lt;</button>
-            <button class="nav-button next-btn">&gt;</button>
-        </div>
+        <div class="blog-slider__text">This Course on Coursera teaches the basics of HTML, CSS, JavaScript and Version Control, helping beginners build interactive and responsive websites through hands-on projects. </div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/M9LGBR95MNYU" target="_blank" class="blog-slider__button">Verify!</a>
+      </div>
     </div>
-
-    <!-- SOCIAL PANEL HTML -->
-    <div class="social-panel-container">
-        <div class="social-panel">
-            <p>Get in touch on</p>
-            <ul>
-                <li>
-                    <a href="https://linkedin.com/in/syedd07" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/syedd07" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/syedd07" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/syedd07" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/syedd07" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-            <button class="close-btn"><i class="fas fa-times"></i></button>
-        </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="/dist/img/JS.jpeg" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">28 Apr 2023</span>
+        <div class="blog-slider__title">Programming with JavaScript
+        <p style="text-align: center; font-size: small; margin-top: 4px; font-style: oblique;">
+          by Meta
+        </p>
+      </div>
+        <div class="blog-slider__text"> A comprehensive course on Coursera that introduces learners to fundamental web development concepts using JavaScript. The curriculum covers essential</div>
+        <a href="https://coursera.org/verify/HJVJCRS52TCK" target="_blank" class="blog-slider__button">Verify!</a>
+      </div>
     </div>
-    <button class="floating-btn">
-        Get in Touch
-    </button>
-    <div class="floating-text">
-         <a href="https://sydali.me" target="_blank">Back to portfilio page?</a>
+    
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="/dist/img/github-foundation.png" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">10 Jan 2025</span>
+        <div class="blog-slider__title">GitHub Foundations</div>
+        <div class="blog-slider__text">Passing the GitHub Foundations certification exam validates subject matter expertise by measuring entry-level skills.</div>
+        <a href="https://www.credly.com/go/1MsdkCMe" target="_blank" class="blog-slider__button">Verify!</a>
+      </div>
     </div>
-
-    <script src="script.js"></script>
+    
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
+<footer>
+  <div class="social-media">
+    <a href="https://github.com/yourprofile" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://instagram.com/yourprofile" target="_blank">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://facebook.com/yourprofile" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+  </div>
+</footer>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>
