@@ -121,10 +121,10 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("div", { className: "course-link", style: { textAlign: "center" } },
-    React.createElement("a", { href: "/certificates/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
+    React.createElement("a", { href: "/certificates/dist/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
-    React.createElement("p", null, "I have completed my different courses from online education provider like coursera and scrimba.. etc; you can see all my certificates by clicking on the link.")))), /*#__PURE__*/
+    React.createElement("p", null, "I have completed my different courses from online education provider like coursera and scrimba githun foundation.. etc; you can see all my certificates by clicking on the link.")))), /*#__PURE__*/
     
     
 
