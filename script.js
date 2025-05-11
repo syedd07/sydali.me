@@ -103,17 +103,18 @@ const About = props => {
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "NOTHING!!."), /*#__PURE__*/
     React.createElement("p", null, "I mean as of now!"),
-     React.createElement("p", null, "However.., "),
-    React.createElement("p", null, "For the front-end I usually work with Javascript, including popular frameworks like ReactJS & Next.js. I also make the web pretty by using CSS and Tailwind, whenever needed, any of their friends: Bootstrap, etc.")), /*#__PURE__*/
-    
+    React.createElement("p", null, "However.., "),
+    React.createElement("p", null, "For the Front-end I usually work with Javascript, TypeScript including popular frameworks like ReactJS and it's buddy Next.js. I also make the web pretty by using CSS and, whenever needed, any of their friends: Tailwind CSS, Bootstrap, etc.")), /*#__PURE__*/
+    React.createElement("div", { className: "desc full" }, /*#__PURE__*/
+    React.createElement("p", null, "For backend development, I excel with Node.js while leveraging Python's FASTAPI and Restful APIs for agile scripting. I deploy my applications on cutting-edge serverless platforms like Vercel or Netlify, as well as on the robust infrastructures of Heroku and Azure, all seamlessly managed with Docker.")), /*#__PURE__*/
     /*# What else? */
 
     React.createElement("div", { className: "title" }, /*#__PURE__*/
     React.createElement("h3", { className: "subtitle" }, "What else?"), /*#__PURE__*/
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
-    React.createElement("p", null, "I am currently pursuing my engineering from MVJ Collage of Engineering loacated in the Silicon Valley of India!")), /*#__PURE__*/
-    
+    React.createElement("p", null, "I am currently pursuing my engineering from MVJ College of Engineering located in the Silicon Valley of India!")), /*#__PURE__*/
+
     /*# My Certifications */
 
     React.createElement("div", { className: "title" }, /*#__PURE__*/
@@ -121,10 +122,10 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("div", { className: "course-link", style: { textAlign: "center" } },
-    React.createElement("a", { href: "/certificates/dist/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
+    React.createElement("a", { href: "/certificates/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" }, target: "_blank" }, "Course Certificate ", " ", /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
-    React.createElement("p", null, "I have completed my different courses from online education provider like coursera and scrimba githun foundation.. etc; you can see all my certificates by clicking on the link.")))), /*#__PURE__*/
+    React.createElement("p", null, "I have completed my different courses from online education provider like coursera and scrimba.. etc; you can see all my certificates by clicking on the link.")))), /*#__PURE__*/
     
     
 
@@ -135,7 +136,7 @@ const About = props => {
     React.createElement("p", { className: "separator" })),
     React.createElement("div", { className: "desc full" },
     React.createElement("div", { className: "resume-link", style: { textAlign: "center"  } },
-    React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "My Resume", " ",
+    React.createElement("a", { href: "/resume/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "My Resume", " ",
     React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
     React.createElement("p", null, "You can View my resume by clicking on the link above.")))), /*#__PURE__*/
@@ -147,7 +148,7 @@ const About = props => {
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("div", { className: "internship-link", style: { textAlign: "center" } },
-    React.createElement("a", { href: "https://internship.sydali.me/", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "Internship Certificate", " ",
+    React.createElement("a", { href: "/Internship/index.html", onClick: props.toggleMenu, style: { fontStyle: "italic", textDecoration: "underline" } }, "Internship Certificate", " ",
     React.createElement("i", { className: "fas fa-external-link-alt" })),
     React.createElement("p",{ClassName: "separator"}),
     React.createElement("p", null, "You can verify my certificates by clicking on the link above.")
@@ -234,11 +235,11 @@ const About = props => {
       title: "Rubik's Cube",
       img: "https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/Rubik's_cube.svg",
       tech: "js ThreeJS  css",
-      link: "https://sydali.me/Rubik's%20Cube/dist/index.html",
+      link: "/the-cube/dist/index.html",
       repo: "https://github.com/syedd07/sydali.me/tree/gh-pages/Rubik's%20Cube" }, /*#__PURE__*/
 
       React.createElement("small", null, "Built using ThreeJS, CSS."), /*#__PURE__*/
-      React.createElement("p", null, "A Rubic Cube made using ThreeJS and CSS.")), /*#__PURE__*/)))
+      React.createElement("p", null, "A Rubik's Cube made using ThreeJS and CSS.")), /*#__PURE__*/)))
     );
 };
 
@@ -257,11 +258,11 @@ const About = props => {
 
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
     React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
-    '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "admin@sydali.me", /*#__PURE__*/))), /*#__PURE__*/
+    '',
+    React.createElement("span", { className: "mail" }, "syedyusufali6626@gmail.com", /*#__PURE__*/))), /*#__PURE__*/
     React.createElement(SocialLinks, null)), /*#__PURE__*/
     React.createElement("form", { id: "contact-form", method: "POST", action: "https://api.web3forms.com/submit" }, /*#__PURE__*/
-    React.createElement("input", { type: "hidden", name: "access_key", value: "0d1ffa74-f0e3-462f-90aa-b4e9716534dd" }), /*Use your API key*/
+    React.createElement("input", { type: "hidden", name: "access_key", value: "83216218-34fe-40ee-b793-d0089a139cdd" }), /*Use your Public key*/
     React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
     React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
     React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
