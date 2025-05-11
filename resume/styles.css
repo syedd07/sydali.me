@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    background-color: #61a1cc;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #e7e6e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #1f2933;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #525c5c;
+    font-size: 1.2em;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #3483b8;
+    font-size: 1.5em;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.contact i, .social i {
+    margin-right: 10px;
+    color: #2980b9;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social li {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+/* View More Button Styles */
+.view-more-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #2980b9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    color: #1a5c88;
+    transform: translateY(-2px);
+}
+
+.view-more-btn i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.view-more-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* Smooth transition for skills */
+#skills-list-extended {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.3s ease;
+    margin-top: 0;
+}
+
+#skills-list-extended.hidden {
+    display: block;
+}
+
+#skills-list-extended:not(.hidden) {
+    max-height: 200px; /* Adjust based on content size */
+    opacity: 1;
+    margin-top: 10px;
+}
