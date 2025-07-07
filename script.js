@@ -18,6 +18,8 @@ const Menu = props => {
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#projects", onClick: props.toggleMenu }, "PORTFOLIO")), /*#__PURE__*/
     React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "#github-profile", onClick: props.toggleMenu }, "GITHUB")), /*#__PURE__*/
+    React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "https://resume.sydali.me/", onClick: props.toggleMenu }, "RESUME")),
     React.createElement("li", null, /*#__PURE__*/
     React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTACT"))), /*#__PURE__*/
@@ -221,7 +223,7 @@ const About = props => {
       title: "Tic-Tac-Toe Game.",
       img: 'https://raw.githubusercontent.com/syedd07/sydali.me/gh-pages/src/tic-tac-toe.svg',
       tech: "js react css",
-      link: "https://game.sydali.me",
+      link: "/game/src/index.html",
       repo: "https://github.com/syedd07/game" }, /*#__PURE__*/
 
       React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
@@ -239,11 +241,90 @@ const About = props => {
       repo: "https://github.com/syedd07/sydali.me/tree/gh-pages/Rubik's%20Cube" }, /*#__PURE__*/
 
       React.createElement("small", null, "Built using ThreeJS, CSS."), /*#__PURE__*/
-      React.createElement("p", null, "A Rubik's Cube made using ThreeJS and CSS.")), /*#__PURE__*/)))
+      React.createElement("p", null, "A Rubik's Cube made using ThreeJS and CSS.")), /*#__PURE__*/
+    
+      /**************
+     Project 3
+    ***************/
+    React.createElement(Project,{
+      title: "Splitify",
+      img: "/src/splitify.png",
+      tech: "react js Supabase Tailwind CSS Node.js n8n",
+      link: "https://ccardly.netlify.app/",
+      repo: "https://github.com/syedd07/splitify" }, /*#__PURE__*/
+    React.createElement("small", null, "Built using React, Supabase, Tailwind CSS, Node.js, n8n."), /*#__PURE__*/
+    React.createElement("p", null, "Splitify is an app and a PWA, that allows you to split bills with your friends and family. It uses Supabase for the backend, Tailwind CSS for styling, and n8n for automation.")), /*#__PURE__*/
+
+    /****************
+    Project 4
+    ***************/
+    React.createElement(Project, {
+      title: "PureText Ai",
+      img: "/src/puretextai.jpg",
+      tech: "react css js",
+      link: "https://puretextai.netlify.app/",
+      repo: "https://github.com/syedd07/PureText-AI"
+    }, /*#__PURE__*/
+    React.createElement("small", null, "Built using Nextjs, Python, FastAPI."), /*#__PURE__*/
+    React.createElement("p", null, "An AI-powered plagiarism checker, integrated with OpenAI's vector embeddings, Hugging face AI Modals, Facebook's FAISS, Google's Programmable engine and Zyte web scrapping.")))))
     );
 };
 
-  /***********************
+
+/***********************
+  GitHub Profile Component
+ ***********************/
+
+const GitHubProfile = props => {
+  return /*#__PURE__*/(
+    React.createElement("section", { id: "github-profile" }, /*#__PURE__*/
+    React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
+    React.createElement("div", { className: "heading" }, /*#__PURE__*/
+    React.createElement("h3", { className: "title" }, "GitHub Activity"), /*#__PURE__*/
+    React.createElement("p", { className: "separator" })), /*#__PURE__*/
+
+    React.createElement("div", { className: "github-content" }, /*#__PURE__*/
+    React.createElement("div", { className: "commit-graph" }, /*#__PURE__*/
+    React.createElement("img", { 
+      src: "https://ghchart.rshah.org/syedd07",
+      alt: "GitHub Contribution Graph",
+      className: "github-contribution-chart",
+      style: { 
+        width: "100%", 
+        maxWidth: "800px", 
+        height: "auto",
+        margin: "0 auto 3rem",
+        display: "block",
+        borderRadius: "8px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
+      }
+    })), /*#__PURE__*/
+
+    React.createElement("div", { className: "github-profile-link" }, /*#__PURE__*/
+    React.createElement("a", { 
+      href: "https://github.com/syedd07",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      className: "github-profile-btn",
+      style: { 
+        display: "inline-block",
+        padding: "15px 30px", 
+        background: "#f300b4",
+        color: "#fff",
+        textDecoration: "none",
+        borderRadius: "25px",
+        fontSize: "1.6rem",
+        fontWeight: "600",
+        transition: "all 0.3s ease",
+        boxShadow: "0 4px 12px rgba(243, 0, 180, 0.3)"
+      }
+    }, "View Full GitHub Profile ", /*#__PURE__*/
+    React.createElement("i", { className: "fab fa-github", style: { marginLeft: "8px" } }))))))
+  );
+};
+
+
+/***********************
   Contact Component
   ***********************/
   const Contact = props => {
@@ -374,6 +455,7 @@ const About = props => {
       React.createElement(Header, null), /*#__PURE__*/
       React.createElement(About, null), /*#__PURE__*/
       React.createElement(Projects, null), /*#__PURE__*/
+      React.createElement(GitHubProfile, null), /*#__PURE__*/
       React.createElement(Contact, null), /*#__PURE__*/
       React.createElement(Footer, null)));
       

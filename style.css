@@ -1,5 +1,3 @@
-
-
 *,
 *::before,
 *::after,
@@ -1277,5 +1275,218 @@ footer .wrapper {
 
   footer .wrapper h3 {
     padding-bottom: .8rem;
+  }
+}
+
+/*****************
+ *****************
+  GITHUB PROFILE STYLES
+ *****************
+ *****************/
+
+#github-profile {
+  background: #fafafa !important;
+  color: #252934 !important;
+  padding: 8rem 0;
+  min-height: auto;
+  display: block !important;
+  width: 100% !important;
+}
+
+#github-profile .wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#github-profile .heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#github-profile .title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #252934;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#github-profile .separator {
+  width: 8rem;
+  height: 0.4rem;
+  background: #f300b4;
+  margin: 0 auto 2rem;
+}
+
+.github-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.github-stat-card {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(243, 0, 180, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block !important;
+  margin: 10px auto !important;
+  max-width: 400px !important;
+  border: 1px solid #f300b4;
+}
+
+.github-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(243, 0, 180, 0.5);
+}
+
+.commit-graph {
+  width: 100%;
+  text-align: center;
+}
+
+.graph-title {
+  font-size: 2.4rem;
+  color: #f300b4;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.github-activity-graph {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(243, 0, 180, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-activity-graph:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(243, 0, 180, 0.5);
+}
+
+.github-streak {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.github-streak-card {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(243, 0, 180, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-streak-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(243, 0, 180, 0.5);
+}
+
+.github-profile-link {
+  margin-top: 2rem;
+}
+
+.github-profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(135deg, #f300b4, #e91e63);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(243, 0, 180, 0.3);
+}
+
+.github-profile-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(243, 0, 180, 0.5) !important;
+  background: #e91e63 !important;
+  color: #fff !important;
+}
+
+.github-profile-btn i {
+  font-size: 2rem;
+}
+
+/* Debugging Styles */
+.test-content {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(243, 0, 180, 0.1);
+  border: 2px solid #f300b4;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* Clean GitHub Profile Styles */
+#github-profile {
+  background: #fafafa !important;
+  color: #252934 !important;
+  padding: 8rem 0;
+  min-height: auto;
+  display: block !important;
+  width: 100% !important;
+  position: relative;
+  z-index: 1;
+}
+
+#github-profile .github-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+#github-profile .commit-graph {
+  width: 100%;
+  text-align: center;
+}
+
+#github-profile .github-contribution-chart {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#github-profile .github-contribution-chart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+#github-profile .github-profile-link {
+  margin-top: 2rem;
+}
+
+#github-profile .github-profile-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(243, 0, 180, 0.5) !important;
+  background: #e91e63 !important;
+  color: #fff !important;
+}
+
+/* Responsive styles for GitHub section */
+@media only screen and (max-width: 768px) {
+  #github-profile {
+    padding: 4rem 0;
+  }
+  
+  #github-profile .title {
+    font-size: 2.8rem;
+  }
+  
+  #github-profile .github-contribution-chart {
+    width: 100%;
+    max-width: 100%;
   }
 }
