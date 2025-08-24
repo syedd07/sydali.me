@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>Internship Certificates</h1>
-    <div class="container">
-        <div class="certificate-container">
+    <div class="header pro-header">
+        <h1 class="page-title">Internship Certificates</h1>
+        <p class="page-tagline">Verified experience & contributions</p>
+    </div>
+    <div class="container certificates-grid">
+        <!-- Earth5R card -->
+        <div class="certificate-container pro-card" data-cert="c18aq438maf">
             <div class="certificate-header">Earth5R <a href="https://earth5r.org/"><i style="color: #ff6f61; " class="fas fa-link"></i></a></div>
             <div class="certificate-details">
                 <p>Web Dev</p>
@@ -26,10 +32,14 @@
                 </p>
                 <p>Date of Issue: Aug 20, 2024</p>
             </div>
-            <button class="verify-button" onclick="verifyCertificate('c18aq438maf')">Verify Certificate</button>
+            <div class="actions-row">
+                <button class="verify-button btn-primary" onclick="verifyCertificate('c18aq438maf')">Verify</button>
+                <button class="download-button btn-ghost" onclick="downloadCertificate('certificates/Earth5.pdf','Earth5R-Certificate.pdf')"><i class="fa fa-download"></i><span>Download</span></button>
+            </div>
             <div class="message">Click to verify and the certificate number will be copied to your clipboard.</div>
         </div>
-        <div class="certificate-container">
+        <!-- Aneri Developers card -->
+        <div class="certificate-container pro-card" data-cert="4722CD26-67C3-5765-1295-6985FAA2C3F5">
             <div class="certificate-header">Aneri Developers <a href="https://aneridevelopers.com/"><i style="color: #ff6f61; " class="fas fa-link"></i></a></div>
             <div class="certificate-details">
                 <p>Content Writing Internship</p>
@@ -41,10 +51,13 @@
                 </p>
                 <p>Date of Issue: June 29, 2022</p>
             </div>
-            <button class="verify-button" onclick="verifyCertificate('4722CD26-67C3-5765-1295-6985FAA2C3F5')">Verify Certificate</button>
-            <div class="message">Click to verify and the certificate number will be copied to your clipboard.</div>
+            <div class="actions-row">
+                <button class="verify-button btn-primary" onclick="verifyCertificate('4722CD26-67C3-5765-1295-6985FAA2C3F5')">Verify</button>
+                <button class="download-button btn-ghost" onclick="downloadCertificate('certificates/Aneri_dev-2022.pdf','Aneri-Certificate.pdf')"><i class="fa fa-download"></i><span>Download</span></button>
+            </div>
         </div>
-        <div class="certificate-container">
+        <!-- Namaskar with Love Foundation card -->
+        <div class="certificate-container pro-card" data-cert="E30FCFDF-C262-B432-C33B-D1660E8BFECF">
             <div class="certificate-header">Namaskar with Love Foundation <a href="https://namaskarwithlove.org/"><i style="color: #ff6f61; " class="fas fa-link"></i></a></div>
             <div class="certificate-details">
                 <p>Content Writing Internship</p>
@@ -56,10 +69,13 @@
                 </p>
                 <p>Date of Issue: June 23, 2022</p>
             </div>
-            <button class="verify-button" onclick="verifyCertificate('E30FCFDF-C262-B432-C33B-D1660E8BFECF')">Verify Certificate</button>
-            <div class="message">Click to verify and the certificate number will be copied to your clipboard.</div>
+            <div class="actions-row">
+                <button class="verify-button btn-primary" onclick="verifyCertificate('E30FCFDF-C262-B432-C33B-D1660E8BFECF')">Verify</button>
+                <button class="download-button btn-ghost" onclick="downloadCertificate('certificates/Love_Foundation-2022.pdf','Namaskar-Certificate.pdf')"><i class="fa fa-download"></i><span>Download</span></button>
+            </div>
         </div>
-        <div class="certificate-container">
+        <!-- Muskurahat Foundation card -->
+        <div class="certificate-container pro-card" data-cert="axsgskylb1e">
             <div class="certificate-header">Muskurahat Foundation <a href="https://www.muskurahat.org.in/"><i style="color: #ff6f61; " class="fas fa-link"></i></a> </div>
             <div class="certificate-details">
                 <p>Volunteering Internship</p>
@@ -71,13 +87,12 @@
                 </p>
                 <p>Date of Issue: November 4, 2022</p>
             </div>
-            <button class="verify-button" onclick="verifyCertificate('axsgskylb1e')">Verify Certificate</button>
-            <div class="message">Click to verify and the certificate number will be copied to your clipboard.</div>
+            <div class="actions-row">
+                <button class="verify-button btn-primary" onclick="verifyCertificate('axsgskylb1e')">Verify</button>
+                <button class="download-button btn-ghost" onclick="downloadCertificate('certificates/Muskurahat-2022.pdf','Muskurahat-Certificate.pdf')"><i class="fa fa-download"></i><span>Download</span></button>
+            </div>
         </div>
     </div>
-
-    <div></div>
-
 
     <div class="footer">
         <div class="social-media">

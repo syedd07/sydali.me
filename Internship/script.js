@@ -46,3 +46,27 @@ function verifyCertificate(certificateNumber) {
         'width=600,height=750,resizable=yes,scrollbars=yes'
     );
 }
+
+function downloadCertificate(path, filename) {
+    fetch(path)
+      .then(res => {
+        if (!res.ok) throw new Error('File not found');
+        return res.blob();
+      })
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        a.remove();
+        notyf.success('Download started: ' + filename);
+      })
+      .catch(err => {
+        console.error(err);
+        notyf.error('Download failed: ' + err.message);
+      });
+}
